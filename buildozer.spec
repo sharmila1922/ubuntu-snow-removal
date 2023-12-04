@@ -6,13 +6,13 @@
 [app]
 
 # (str) Title of your application
-title = My Application
+title = snowremoval
 
 # (str) Package name
-package.name = myapp
+package.name = snow
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.test
+package.domain = org.snow
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -42,7 +42,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy
+requirements = python3,kivy,kivymd,boto3,plyer,pymysql,botocore==1.32.6,certifi==2023.11.17,charset-normalizer==3.3.2,docutils==0.20.1,filelock==3.13.1,idna==3.5,jmespath==1.0.1,pillow,platformdirs==4.0.0,ptyprocess==0.7.0,Pygments==2.17.2,python-dateutil==2.8.2,requests==2.31.0,s3transfer==0.7.0,virtualenv==20.24.7,dislib==0.3.0
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -103,7 +103,7 @@ fullscreen = 0
 
 # (list) Permissions
 # (See https://python-for-android.readthedocs.io/en/latest/buildoptions/#build-options-1 for all the supported syntaxes and properties)
-#android.permissions = android.permission.INTERNET, (name=android.permission.WRITE_EXTERNAL_STORAGE;maxSdkVersion=18)
+android.permissions = android.permission.INTERNET, (name=android.permission.WRITE_EXTERNAL_STORAGE;maxSdkVersion=18)
 
 # (list) features (adds uses-feature -tags to manifest)
 #android.features = android.hardware.usb.host
